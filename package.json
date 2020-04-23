@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "apollo": "nodemon apollo/index"
+    "apollo": "nodemon apollo/index",
+    "prisma-create": "npx prisma migrate save --experimental",
+    "prisma-deploy": "npx prisma migrate up --experimental"
   },
   "repository": {
     "type": "git",
@@ -18,10 +20,12 @@
   },
   "homepage": "https://github.com/heyshadowsmith/nap#readme",
   "dependencies": {
+    "@prisma/client": "^2.0.0-beta.3",
     "apollo-server": "^2.12.0",
     "graphql": "^15.0.0"
   },
   "devDependencies": {
+    "@prisma/cli": "^2.0.0-beta.3",
     "nodemon": "^2.0.3"
   }
 }
