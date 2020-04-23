@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    { 
+      "src": "apollo/index.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api", "dest": "apollo/index.js"
+    }
+  ]
+},
