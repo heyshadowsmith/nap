@@ -2,4 +2,3 @@
 .env
 .now
 node_modules
-migrations

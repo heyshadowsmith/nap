@@ -1,18 +1,31 @@
 {
   "version": 2,
+  "alias": ["nap-stack.now.sh"],
   "builds": [
-    { 
+    {
+      "src": "nuxt/nuxt.config.js",
+      "use": "@nuxtjs/now-builder"
+    },
+    {
       "src": "apollo/index.js",
-      "use": "@now/node-server"
+      "use": "@now/node@canary",
+      "config": {
+        "maxLambdaSize": "25mb"
+      }
     }
   ],
+  "build": {
+    "env": {
+      "DATABASE_URL": "@database_url"
+    }
+  },
   "routes": [
     {
-      "src": "/api", 
+      "src": "/api",
       "dest": "apollo/index.js"
     }
   ],
   "env": {
-    "DATABASE": "@database"
+    "DATABASE_URL": "@database_url"
   }
 }

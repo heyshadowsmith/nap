@@ -11,7 +11,8 @@ const typeDefs = gql`
   }
 
   type User {
-    name: String
+    id: ID!
+    name: String!
   }
 `;
 
