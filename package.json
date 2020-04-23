@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "nuxt": "cd nuxt && npm run dev && cd ..",
     "apollo": "nodemon apollo/index",
     "prisma-create": "npx prisma migrate save --experimental",
     "prisma-deploy": "npx prisma migrate up --experimental"

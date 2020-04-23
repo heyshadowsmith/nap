@@ -1,9 +1,4 @@
 {
-  "name": "nuxt",
-  "version": "1.0.0",
-  "description": "My fantastic Nuxt.js project",
-  "author": "Shadow Smith",
-  "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -14,7 +9,7 @@
   "dependencies": {
     "@nuxtjs/apollo": "^4.0.0-rc19",
     "@nuxtjs/dotenv": "^1.4.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.12.2"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.0.0",
