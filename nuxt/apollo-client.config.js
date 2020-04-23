@@ -16,8 +16,7 @@ export default () => ({
       console.log(networkError)
     }),
     new HttpLink({
-      uri,
-      credentials: 'include'
+      uri
     })
   ]),
   cache: new InMemoryCache(),
